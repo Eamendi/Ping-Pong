@@ -10,9 +10,10 @@ var pingPong = function(number) {
 $(document).ready(function() {
   $("form#formInput").submit(function(event) {
     $("ul").empty();
-    var number = parseInt($("input#numberEntry").val());
-
-    for (i = 1; i <= number; i++)
+    var number = parseInt($("input#userInput").val());
+    debugger 
+    for (var i = 1; i <= number; i++) {
+      console.log(i)
       if (i % 3 === 0 && i % 5 === 0) {
         $("ul").append("<li>pingpong</li>");
 
