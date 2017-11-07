@@ -12,7 +12,8 @@ $(document).ready(function() {
     
     $("ul").empty();
     var number = parseInt($("input#userInput").val());
-    
+      debugger 
+
     for (var i = 1; i <= number; i++) {
       console.log(i)
       if (i % 3 === 0 && i % 5 === 0) {
